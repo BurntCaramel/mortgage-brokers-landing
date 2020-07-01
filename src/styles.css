@@ -8,10 +8,12 @@
 }
 
 :root {
-  --measure: 75rem; /* 1200px */
+  --measure-md: 75rem; /* 1200px */
+  --measure-sm: 48rem; /* 768px */
   --spacing-viewport: 3vw;
   --color-primary: #00837b;
   --color-primary-darker: #006e68;
+  --color-primary-opacity-75: #3EA19B;
   --color-secondary: rgba(0, 131, 123, 0.75);
   --shadow-lg: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
 
@@ -52,17 +54,27 @@ footer[role="contentinfo"] {
 
 /* === BASE === */
 
+a {
+  color: var(--color-primary);
+}
+a:hover {
+  text-decoration: underline;
+}
+
 small {
   font-size: 0.75rem;
 }
 
 /* === UTILITY: inspired by the very useful Tailwind CSS === */
 
-.measure {
-  max-width: var(--measure);
+.measure, .measure-sm {
+  max-width: var(--measure-md);
   padding-left: var(--spacing-viewport);
   padding-right: var(--spacing-viewport);
   margin: auto;
+}
+.measure-sm {
+  max-width: var(--measure-sm);
 }
 
 .row {
@@ -76,14 +88,30 @@ small {
 .stack {
   display: flex;
   flex-direction: column;
+}
+.stack > * + * {
+  margin-top: var(--space-y);
+}
+
+.items-center {
   align-items: center;
 }
 
-.primary {
+.text-white {
+  color: white;
+}
+.text-primary-color {
   color: var(--color-primary);
 }
-.secondary {
+.text-secondary-color {
   color: var(--color-secondary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-primary-opacity-75 {
+  background-color: var(--color-primary-opacity-75);
 }
 
 .button-primary {
@@ -107,8 +135,17 @@ small {
 .text-center {
   text-align: center;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
 .text-lg {
   font-size: 1.125rem;
+  line-height: 1.4;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.4;
 }
 
 .font-bold {
@@ -136,6 +173,7 @@ small {
 .pt-4 {
   padding-top: 4rem;
 }
+
 .pb-1\/2 {
   padding-bottom: 0.5rem;
 }
@@ -150,6 +188,18 @@ small {
 }
 .pb-4 {
   padding-bottom: 3rem;
+}
+
+.pl-1\/2 {
+  padding-left: 0.5rem;
+}
+
+.pr-1\/2 {
+  padding-right: 0.5rem;
+}
+
+.border-b-primary {
+  border-bottom: 1px solid var(--color-primary);
 }
 
 .list-none {
