@@ -10,10 +10,11 @@
 :root {
   --measure-md: 75rem; /* 1200px */
   --measure-sm: 48rem; /* 768px */
+  --measure-xs: 30rem; /* 480px */
   --spacing-viewport: 3vw;
   --color-primary: #00837b;
   --color-primary-darker: #006e68;
-  --color-primary-opacity-75: #3EA19B;
+  --color-primary-opacity-75: #3ea19b;
   --color-secondary: rgba(0, 131, 123, 0.75);
   --shadow-lg: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
 
@@ -61,13 +62,21 @@ a:hover {
   text-decoration: underline;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+
 small {
   font-size: 0.75rem;
 }
 
 /* === UTILITY: inspired by the very useful Tailwind CSS === */
 
-.measure, .measure-sm {
+.measure,
+.measure-sm,
+.measure-xs {
   max-width: var(--measure-md);
   padding-left: var(--spacing-viewport);
   padding-right: var(--spacing-viewport);
@@ -76,25 +85,8 @@ small {
 .measure-sm {
   max-width: var(--measure-sm);
 }
-
-.row {
-  display: flex;
-  align-items: center;
-}
-.row > * + * {
-  margin-left: var(--space-x);
-}
-
-.stack {
-  display: flex;
-  flex-direction: column;
-}
-.stack > * + * {
-  margin-top: var(--space-y);
-}
-
-.items-center {
-  align-items: center;
+.measure-xs {
+  max-width: var(--measure-xs);
 }
 
 .text-white {
@@ -152,12 +144,12 @@ small {
   font-weight: bold;
 }
 
-.ml-auto,
-.mx-auto {
+/* Double to give higher precedence than `* + *` */
+.ml-auto.ml-auto {
   margin-left: auto;
 }
-.mr-auto,
-.mx-auto {
+/* Double to give higher precedence than `* + *` */
+.mr-auto.mr-auto {
   margin-right: auto;
 }
 
@@ -204,4 +196,38 @@ small {
 
 .list-none {
   list-style: none;
+}
+
+/* === RESPONSIVE LAYOUT === */
+
+.row {
+  display: flex;
+  align-items: center;
+}
+.row > * + * {
+  margin-left: var(--space-x);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+.stack > * + * {
+  margin-top: var(--space-y);
+}
+
+.items-center {
+  align-items: center;
+}
+
+@media (min-width: 48rem) {
+  .md\:row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .md\:row > * + * {
+    margin-top: 0;
+    margin-left: var(--space-x);
+  }
 }
