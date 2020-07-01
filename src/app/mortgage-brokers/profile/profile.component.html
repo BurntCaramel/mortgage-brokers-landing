@@ -1,22 +1,30 @@
 <div class="Profile">
   <div *ngIf="agentData" class="ProfileAbout stack">
-    <img [src]="agentData.Theme.BannerImage" width="100" class="pt-1 pb-1" />
+    <img [src]="agentData.Theme.BannerImage" width="180" class="pt-1/2 pb-1/2" />
     <img [src]="agentData.Theme.CoverImage" width="400" />
-    <img [src]="agentData.Theme.AvatarImage" width="200" />
-    <h2 class="pt-1 text-2xl font-bold">{{ agentData.AgentName }}</h2>
-    <div class="font-italic">{{ agentData.AgentTitle }}</div>
-    <div class="pt-1">
-      <h3 class="text-lg text-primary-color">
+    <img [src]="agentData.Theme.AvatarImage" width="180" class="ProfileAvatarImage" />
+    <h2 class="pt-1 text-center text-2xl font-bold">{{ agentData.AgentName }}</h2>
+    <div class="text-center font-italic">{{ agentData.AgentTitle }}</div>
+    <div class="pt-1 pb-2">
+      <h3 class="pb-1 text-lg text-primary-color">
         About {{ agentData.AgentFirstName }}
       </h3>
-      <p>{{ agentData.About.Summary }}</p>
+      <p class="text-lg">{{ agentData.About.Summary }}</p>
     </div>
   </div>
-  <div *ngIf="reviewsData && reviewsData.IsSuccessful && reviewsData.Result" class="ProfileReviews overflow-scroll">
-    <h2 class="pb-1 text-2xl text-primary-color">{{ reviewsData.Result.Total }} Reviews</h2>
+  <div
+    *ngIf="reviewsData && reviewsData.IsSuccessful && reviewsData.Result"
+    class="ProfileReviews overflow-scroll"
+  >
+    <h2 class="pb-1/2 text-2xl text-primary-color font-italic">
+      {{ agentData.AgentFirstName}} has {{ reviewsData.Result.Total }} Reviews
+    </h2>
     <div class="ProfileReviewsGrid">
-      <article *ngFor="let review of reviewsData.Result.Results" class="ProfileReviewsCard">
-        <img [src]="review.PropertyCoverImage" alt="" width="400">
+      <article
+        *ngFor="let review of reviewsData.Result.Results"
+        class="ProfileReviewsCard"
+      >
+        <img [src]="review.PropertyCoverImage" alt="" width="400" />
         <div class="pt-1 pb-1 pl-1 pr-1">
           <h3 class="text-xl pb-1">{{ review.Title }}</h3>
           <h3 class="">{{ review.Description }}</h3>
