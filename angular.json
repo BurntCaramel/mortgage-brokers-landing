@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mortgage-brokers-landing"
+    }
+  },
+  "defaultProject": "mortgage-brokers-landing",
+  "cli": {
+    "analytics": false
+  }
 }
