@@ -1,9 +1,16 @@
 {
-  "/reviews-api/*": {
+  "/api/reviews/*": {
     "target": "https://reviews.ratemyagent.com.au",
     "secure": false,
     "logLevel": "debug",
     "changeOrigin": true,
-    "pathRewrite": {"^/reviews-api" : "/review/MortgageBroker"}
+    "pathRewrite": {"^/api/reviews" : "/review/MortgageBroker"}
+  },
+  "/api/agents/*": {
+    "target": "https://api.ratemyagent.com.au/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {"^/api/agents" : "/Agents"}
   }
 }

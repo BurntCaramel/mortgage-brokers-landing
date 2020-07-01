@@ -1,0 +1,29 @@
+.Profile {
+  display: grid;
+  grid-template-areas:
+    "about reviews"
+    ". reviews";
+  grid-template-columns: 400px auto;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.ProfileAbout {
+  grid-area: about;
+  position: sticky;
+  top: 0;
+}
+.ProfileReviews {
+  grid-area: reviews;
+}
+.ProfileReviewsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, min-content));
+  grid-template-rows: 1fr;
+  gap: 1rem;
+}
+.ProfileReviewsCard {
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-lg);
+}
