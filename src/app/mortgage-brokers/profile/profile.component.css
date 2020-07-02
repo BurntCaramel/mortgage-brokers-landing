@@ -24,13 +24,8 @@
 .ProfileReviewsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, min-content));
-  grid-template-rows: 1fr;
+  grid-template-rows: repeat(auto-fill, max-content);
   gap: 1rem;
-}
-.ProfileReviewsCard {
-  display: flex;
-  flex-direction: column;
-  box-shadow: var(--shadow-lg);
 }
 
 @media (min-width: 48rem) {
