@@ -22,6 +22,7 @@
     <div class="ProfileReviewsGrid">
       <app-review-card
         *ngFor="let review of sortedReviews"
+        [rating]="review.StarRatings.OverallStarRating"
         [title]="review.Title"
         [description]="review.Description"
         [coverImage]="review.PropertyCoverImage"

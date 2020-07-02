@@ -12,16 +12,18 @@
   --measure-sm: 48rem; /* 768px */
   --measure-xs: 30rem; /* 480px */
   --spacing-viewport: 3vw;
+  --color-dark: #1a222c;
   --color-primary: #00837b;
   --color-primary-darker: #006e68;
   --color-primary-opacity-75: #3ea19b;
   --color-secondary: rgba(0, 131, 123, 0.75);
+  --color-orange: #fbb116;
   --shadow-lg: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 100%;
-  color: #333;
+  color: var(--color-dark);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -54,6 +56,10 @@ footer[role="contentinfo"] {
 }
 
 /* === BASE === */
+
+[hidden] {
+  display: none !important;
+}
 
 a {
   color: var(--color-primary);
@@ -97,6 +103,12 @@ small {
 }
 .text-secondary-color {
   color: var(--color-secondary);
+}
+.text-dark {
+  color: var(--color-dark);
+}
+.text-orange {
+  color: var(--color-orange);
 }
 
 .bg-primary {
