@@ -144,6 +144,10 @@ small {
   font-size: 1.125rem;
   line-height: 1.4;
 }
+.text-base {
+  font-size: 1rem;
+  line-height: 1.4;
+}
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.4;
@@ -214,6 +218,10 @@ small {
 
 .list-none {
   list-style: none;
+}
+
+.overflow-scroll {
+  overflow: scroll;
 }
 
 /* === RESPONSIVE LAYOUT === */

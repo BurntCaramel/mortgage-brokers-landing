@@ -24,6 +24,11 @@ export interface MortgageBrokerReviews {
       Postcode: string;
       SuburbUrl: string;
       Coords: Record<'Lat' | 'Lot', number>;
+      ResultPrice: string | null;
+      ResultDate: string | null;
+      StarRatings: {
+        OverallStarRating: number;
+      }
     }>;
   };
 }

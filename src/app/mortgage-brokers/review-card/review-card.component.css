@@ -4,3 +4,8 @@
   flex-direction: column;
   box-shadow: var(--shadow-lg);
 }
+
+.ReviewCard-cover-image {
+  /* Note: this squishes the image and a better solution should be found */
+  max-height: 260px;
+}
