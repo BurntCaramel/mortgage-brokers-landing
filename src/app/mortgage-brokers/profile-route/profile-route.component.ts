@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { flatMap } from 'rxjs/operators';
-import { AgentsService } from 'src/app/api/agents.service';
-import { ReviewsService } from 'src/app/api/reviews.service';
+import { AgentsService } from '../../api/agents.service';
+import { ReviewsService } from '../../api/reviews.service';
 
 @Component({
   selector: 'app-profile-route',
   templateUrl: './profile-route.component.html',
-  styleUrls: ['./profile-route.component.css']
+  styleUrls: ['./profile-route.component.css'],
 })
 export class ProfileRouteComponent implements OnInit {
-
   constructor(
     private route: ActivatedRoute,
     private agentsAPI: AgentsService,
@@ -22,7 +21,9 @@ export class ProfileRouteComponent implements OnInit {
   );
 
   reviewsData$ = this.route.paramMap.pipe(
-    flatMap((params) => this.reviewsAPI.getReviewsForMortgageBroker(params.get('agentID')))
+    flatMap((params) =>
+      this.reviewsAPI.getReviewsForMortgageBroker(params.get('agentID'))
+    )
   );
 
   ngOnInit(): void {}

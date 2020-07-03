@@ -1,9 +1,9 @@
-<div *ngIf="hasAgent" class="pt-4 pb-4">
-  <app-reviews-spotlight agentID="gn905"></app-reviews-spotlight>
+<div *ngIf="agentCode$ | async" class="pt-4 pb-4">
+  <app-reviews-spotlight [agentID]="agentCode$ | async"></app-reviews-spotlight>
 
   <div class="stack items-center pt-3">
-    <a routerLink="/mortgage-brokers/agents/gn905" class="button-primary"
-      >View Your Profile</a
+    <a [routerLink]="agentProfileURL$ | async" class="button-primary"
+      >View Your Reviews</a
     >
   </div>
 </div>
