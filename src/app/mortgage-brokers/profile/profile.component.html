@@ -1,5 +1,5 @@
 <div class="Profile">
-  <div *ngIf="agentData" class="ProfileAbout stack">
+  <div *ngIf="agentData" class="Profile--about stack">
     <img
       [src]="agentData.Theme.BannerImage"
       width="180"
@@ -9,7 +9,7 @@
     <img
       [src]="agentData.Theme.AvatarImage"
       width="180"
-      class="ProfileAvatarImage"
+      class="Profile--avatar-image"
     />
     <h2 class="pt-1 text-center text-2xl font-bold">
       {{ agentData.AgentName }}
@@ -32,12 +32,12 @@
   </div>
   <div
     *ngIf="reviewsData && reviewsData.IsSuccessful && reviewsData.Result"
-    class="ProfileReviews overflow-scroll"
+    class="Profile--reviews overflow-scroll"
   >
     <h2 class="pb-1/2 text-2xl text-primary-color font-italic">
       {{ agentData.AgentFirstName }} has {{ reviewsData.Result.Total }} Reviews
     </h2>
-    <div class="ProfileReviewsGrid">
+    <div class="Profile--reviews-grid">
       <app-review-card
         *ngFor="let review of sortedReviews"
         [rating]="review.StarRatings.OverallStarRating"

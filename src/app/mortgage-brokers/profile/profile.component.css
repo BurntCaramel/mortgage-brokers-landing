@@ -6,25 +6,25 @@
   gap: 1rem;
 }
 
-.ProfileAbout {
+.Profile--about {
   grid-area: about;
   padding-top: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.ProfileAvatarImage {
+.Profile--avatar-image {
   margin-top: -3rem;
   border-radius: 9999px;
   box-shadow: var(--shadow-lg);
 }
 
-.ProfileReviews {
+.Profile--reviews {
   grid-area: reviews;
   padding-top: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.ProfileReviewsGrid {
+.Profile--reviews-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-template-rows: repeat(auto-fill, max-content);
@@ -40,13 +40,13 @@
     grid-template-columns: 400px auto;
   }
 
-  .ProfileAbout {
+  .Profile--about {
     position: sticky;
     top: 0;
     padding-left: 2rem;
     padding-right: 0.5rem;
   }
-  .ProfileReviews {
+  .Profile--reviews {
     padding-left: 0.5rem;
     padding-right: 2rem;
   }
