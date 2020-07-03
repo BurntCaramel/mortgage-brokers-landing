@@ -61,6 +61,7 @@ The three main points I rewrote to sell more of the benefits of having a profile
 - The font is a system font, I notice a custom font ‘Circular’ is being used on the live site. They should look very similar, so would be easy to swap over.
 - The rest of the styles use a BEM-like approach.
 - The pages are responsive, and done in a mobile-first manner, so that the base styles affects all experiences, and then just a small amount of media queries enhance the layout for wider screens.
+- There’s a little bit of squishing of photos on the profile page, if I had a little more time I would find a better solution like cropping instead of stretching.
 
 
 ----
