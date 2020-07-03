@@ -10,6 +10,7 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
 import { MultilinedTextComponent } from './multilined-text/multilined-text.component';
 import { ReviewsSpotlightComponent } from './reviews-spotlight/reviews-spotlight.component';
 import { ReviewsCarouselComponent } from './reviews-carousel/reviews-carousel.component';
+import { JoinComponent } from './join/join.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ReviewsCarouselComponent } from './reviews-carousel/reviews-carousel.co
     MultilinedTextComponent,
     ReviewsSpotlightComponent,
     ReviewsCarouselComponent,
+    JoinComponent,
   ],
   imports: [CommonModule, MortgageBrokersRoutingModule],
   exports: [
