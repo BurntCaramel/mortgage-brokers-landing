@@ -50,7 +50,7 @@ The three main points I rewrote to sell more of the benefits of having a profile
 - The built-in router is used with dynamic parameters.
 - The `async` pipe is used to handle subscribing to observable, so I don’t have to manage them. As the docs say: _when the component gets destroyed, the async pipe unsubscribes automatically to avoid potential memory leaks_ which is exactly what I desired.
 - Most of the smaller leaf components like review card, star rating, review carousel have some test using [Angular Testing Library](https://testing-library.com/docs/angular-testing-library/intro). These allow using higher level roles to query elements on the page, which makes for more robust and easier to write tests.
-- Ideally I’d add more testing, especially one that mocks out the services. I’d be keen for some helpful advice on RMA’s preferred approaches to testing.
+- Ideally I’d add more testing, especially one that mocks out the services. I’d be keen for some helpful advice on RMA’s preferred approaches to testing. The e2e tests use protractor which I’m not familiar with, but I would pick it up quickly.
 - [NGRX](https://ngrx.io/) looks like it would provide a lot of conveniences for managing state and observables in Angular, but decided not to add it to keep things simpler, so keen to hear opinions around this topic.
 
 ## Styling
