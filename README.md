@@ -1,6 +1,12 @@
 # Mortgage Brokers Landing
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```console
+npm ci
+npm start
+npm test
+```
+
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Pages
 
