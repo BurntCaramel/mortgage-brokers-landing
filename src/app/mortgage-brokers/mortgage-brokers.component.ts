@@ -3,13 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-mortgage-brokers',
   templateUrl: './mortgage-brokers.component.html',
-  styleUrls: ['./mortgage-brokers.component.css']
+  styleUrls: ['./mortgage-brokers.component.css'],
 })
 export class MortgageBrokersComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  get hasAgent(): boolean {
+    return true;
   }
-
 }

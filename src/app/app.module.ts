@@ -5,10 +5,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { APIModule } from './api/api.module';
+import { MortgageBrokersModule } from './mortgage-brokers/mortgage-brokers.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, APIModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    APIModule,
+    MortgageBrokersModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

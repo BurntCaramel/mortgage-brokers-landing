@@ -1,0 +1,28 @@
+<div class="ReviewsCarousel">
+  <div *ngIf="reviews">
+    <div
+      class="ReviewsCarousel--items"
+      style="
+      --carousel-item-count: {{ reviews.length }};
+      --carousel-item-offset: {{ offsetIndex }};
+      "
+    >
+      <div *ngFor="let review of reviews" class="ReviewsCarousel--item">
+        <div>
+          <app-review-card
+            [title]="review.Title"
+            [description]="review.Description"
+            [coverImage]="review.PropertyCoverImage"
+          >
+          </app-review-card>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button (click)="goPrevious()" class="ReviewsCarousel--previous-button">
+    <span class="visually-hidden">Previous review</span>
+  </button>
+  <button (click)="goNext()" class="ReviewsCarousel--next-button">
+    <span class="visually-hidden">Next review</span>
+  </button>
+</div>

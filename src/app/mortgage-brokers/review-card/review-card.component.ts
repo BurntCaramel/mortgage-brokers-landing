@@ -6,6 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./review-card.component.css'],
 })
 export class ReviewCardComponent implements OnInit {
+  @Input() rating: number;
   @Input() title: string;
   @Input() description: string;
   @Input() coverImage: string;

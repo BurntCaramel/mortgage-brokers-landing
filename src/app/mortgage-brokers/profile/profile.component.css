@@ -3,13 +3,13 @@
     "about"
     "reviews";
   grid-template-columns: auto;
-  gap: 2rem;
-  padding: 0 2rem;
+  gap: 1rem;
 }
 
 .ProfileAbout {
   grid-area: about;
   padding-top: 2rem;
+  padding-left: 2rem;
 }
 .ProfileAvatarImage {
   margin-top: -3rem;
@@ -20,6 +20,8 @@
 .ProfileReviews {
   grid-area: reviews;
   padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
 }
 .ProfileReviewsGrid {
   display: grid;
