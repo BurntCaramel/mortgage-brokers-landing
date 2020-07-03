@@ -44,6 +44,10 @@ The three main points I rewrote to sell more of the benefits of having a profile
 - **Be found online:** A powerful SEO boost so prospective clients can find you easily on Google. — _Mortgage brokers probably have no idea how to be found in Google, so it’s worth touting this as a strength._
 - **Quick for clients:** Reviews take minutes to fill out, and there’s no limit to how many you can request. — _Emphasises how quick the workflow is, and that it’s unlimited which may help understand the value when they come to see the price in the checkout.
 
+I also brought the other statistic to the forefront: _Did you know that 89% of consumers read online reviews²?_ I brought it alongside a scaled-up screenshot of the write a review form, making the process pretty clear while emphasising the benefits of online reviews.
+
+I also added a paragraph: _RateMyAgent makes it quick and easy to request reviews. A handful of genuine reviews could yield dividends for years._ This highlights that with a little bit of effort of asking for reviews, they could see a substantial change in their business.
+
 ## Metrics
 
 - The brief stated high time on page being the priority. For this reason, I design the reviews carousel which brings the person’s actual reviews to be showcased at the top of the page. I believe most people would spend a decent amount of time to see what has been said about them. You could measure each click through the slider to get a sense of how engaging it is, and to whom. Additional features like sharing could be added to make it even more engaging.
