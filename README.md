@@ -60,6 +60,7 @@ The three main points I rewrote to sell more of the benefits of having a profile
 - CSS variables also allow reuse and consistency. They are not officially supported in IE, but can be compiled using [PostCSS’s preset env](https://github.com/csstools/postcss-preset-env) plugin which hasn’t been used here but could easily be used on the real site.
 - The font is a system font, I notice a custom font ‘Circular’ is being used on the live site. They should look very similar, so would be easy to swap over.
 - The rest of the styles use a BEM-like approach.
+- The pages are responsive, and done in a mobile-first manner, so that the base styles affects all experiences, and then just a small amount of media queries enhance the layout for wider screens.
 
 
 ----
