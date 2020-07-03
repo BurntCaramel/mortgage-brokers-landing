@@ -1,4 +1,10 @@
 <div *ngIf="hasAgent" class="pt-4 pb-4">
+  <h2 class="headline font-bold pt-2 pb-3">
+    Damien,
+    <span class="text-primary-color">
+      have you seen these great reviews about you?
+    </span>
+  </h2>
   <app-reviews-spotlight agentID="gn905"></app-reviews-spotlight>
 </div>
 
@@ -19,11 +25,16 @@
     class="stack ml-auto mr-auto"
   />
   <div class="stack items-center pt-3">
-    <a routerLink="/mortgage-brokers/agents/gn905" class="button-primary">View Your Profile</a>
+    <a routerLink="/mortgage-brokers/agents/gn905" class="button-primary"
+      >View Your Profile</a
+    >
   </div>
 </div>
 
-<div class="pt-4 pb-4 stack md:row measure text-center text-lg" style="--space-y: 3rem;">
+<div
+  class="pt-4 pb-4 stack md:row measure text-center text-lg"
+  style="--space-y: 3rem;"
+>
   <section class="measure-xs">
     <img
       src="/assets/mortgage-brokers/star-hands.png"

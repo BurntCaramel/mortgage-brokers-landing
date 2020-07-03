@@ -51,6 +51,7 @@
   background: none;
   border: none;
   background-image: url("/assets/mortgage-brokers/carousel-arrow-right.svg");
+  cursor: pointer;
 }
 .ReviewsCarousel--previous-button {
   margin-left: calc(
