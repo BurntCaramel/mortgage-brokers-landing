@@ -1,15 +1,33 @@
 <div class="Profile">
   <div *ngIf="agentData" class="ProfileAbout stack">
-    <img [src]="agentData.Theme.BannerImage" width="180" class="pt-1/2 pb-1/2" />
+    <img
+      [src]="agentData.Theme.BannerImage"
+      width="180"
+      class="pt-1/2 pb-1/2"
+    />
     <img [src]="agentData.Theme.CoverImage" width="400" />
-    <img [src]="agentData.Theme.AvatarImage" width="180" class="ProfileAvatarImage" />
-    <h2 class="pt-1 text-center text-2xl font-bold">{{ agentData.AgentName }}</h2>
+    <img
+      [src]="agentData.Theme.AvatarImage"
+      width="180"
+      class="ProfileAvatarImage"
+    />
+    <h2 class="pt-1 text-center text-2xl font-bold">
+      {{ agentData.AgentName }}
+    </h2>
     <div class="text-center font-italic">{{ agentData.AgentTitle }}</div>
     <div class="pt-2 pb-2">
       <h3 class="pb-1 text-xl text-primary-color">
         About {{ agentData.AgentFirstName }}
       </h3>
-      <app-multilined-text class="text-base" [text]="agentData.About.Summary"></app-multilined-text>
+      <app-multilined-text
+        class="text-base"
+        [text]="agentData.About.Summary"
+      ></app-multilined-text>
+    </div>
+    <div class="stack">
+      <a routerLink="/mortgage-brokers/join" class="button-primary">
+        Unlock Your Profile
+      </a>
     </div>
   </div>
   <div
@@ -17,7 +35,7 @@
     class="ProfileReviews overflow-scroll"
   >
     <h2 class="pb-1/2 text-2xl text-primary-color font-italic">
-      {{ agentData.AgentFirstName}} has {{ reviewsData.Result.Total }} Reviews
+      {{ agentData.AgentFirstName }} has {{ reviewsData.Result.Total }} Reviews
     </h2>
     <div class="ProfileReviewsGrid">
       <app-review-card

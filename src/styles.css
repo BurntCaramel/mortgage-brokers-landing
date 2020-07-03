@@ -131,6 +131,7 @@ small {
 
 .button-primary {
   padding: 1rem 3rem;
+  text-align: center;
   font-size: 28px;
   font-weight: bold;
   color: white;

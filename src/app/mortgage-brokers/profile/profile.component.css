@@ -9,7 +9,8 @@
 .ProfileAbout {
   grid-area: about;
   padding-top: 2rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .ProfileAvatarImage {
   margin-top: -3rem;
@@ -21,7 +22,7 @@
   grid-area: reviews;
   padding-top: 2rem;
   padding-left: 1rem;
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 .ProfileReviewsGrid {
   display: grid;
@@ -42,5 +43,11 @@
   .ProfileAbout {
     position: sticky;
     top: 0;
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+  }
+  .ProfileReviews {
+    padding-left: 0.5rem;
+    padding-right: 2rem;
   }
 }
