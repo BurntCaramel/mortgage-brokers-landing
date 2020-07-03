@@ -9,7 +9,7 @@
       <h3 class="pb-1 text-xl text-primary-color">
         About {{ agentData.AgentFirstName }}
       </h3>
-      <p class="text-base">{{ agentData.About.Summary }}</p>
+      <app-multilined-text class="text-base" [text]="agentData.About.Summary"></app-multilined-text>
     </div>
   </div>
   <div
