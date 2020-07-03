@@ -1,11 +1,10 @@
 import {
   Component,
-  OnInit,
   Input,
   OnChanges,
   SimpleChanges,
 } from '@angular/core';
-import { flatMap, map, tap } from 'rxjs/operators';
+import { flatMap, map } from 'rxjs/operators';
 import { ReviewsService } from '../../api/reviews.service';
 import { ReplaySubject } from 'rxjs';
 
@@ -21,7 +20,6 @@ export class ReviewsSpotlightComponent implements OnChanges {
   private agentID$ = new ReplaySubject<string>();
 
   reviews$ = this.agentID$.pipe(
-    tap((agentID) => console.log('READ agent id', agentID)),
     flatMap((agentID) => this.reviewsAPI.getReviewsForMortgageBroker(agentID)),
     map((reviewsData) => reviewsData.Result.Results)
   );
