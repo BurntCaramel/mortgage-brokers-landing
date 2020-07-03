@@ -12,12 +12,4 @@ describe('ReviewsSpotlightComponent', () => {
       componentProperties: props,
     });
   }
-
-  // describe('3 reviews', () => {
-  //   beforeEach(() => subject({ reviews: buildMany(3, buildReview) }));
-
-  //   it('renders 3 articles', () => {
-  //     expect(screen.getAllByRole('article').length).toEqual(3);
-  //   });
-  // });
 });
