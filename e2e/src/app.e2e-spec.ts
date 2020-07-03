@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('shows headline', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('mortgage-brokers-landing app is running!');
+    expect(page.getHeadlineText()).toEqual('Attract new clients with a dedicated Mortgage Broker profile by RateMyAgent');
   });
 
   afterEach(async () => {
