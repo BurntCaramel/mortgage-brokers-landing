@@ -26,7 +26,7 @@
     class="stack ml-auto mr-auto"
   />
   <div class="stack items-center pt-3">
-    <a routerLink="/mortgage-brokers/agents/gn905" class="button-primary"
+    <a [href]="bookURL" class="button-primary"
       >Book Demo</a
     >
   </div>
@@ -110,7 +110,12 @@
     </div>
   </div>
   <div class="stack items-center pt-2">
-    <button class="button-primary">Start Getting Reviews Now</button>
+    <a
+      [href]="bookURL"
+      target="_blank"
+      class="button-primary"
+      >Start Getting Reviews Now</a
+    >
   </div>
 </section>
 

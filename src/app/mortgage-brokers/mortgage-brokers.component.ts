@@ -18,5 +18,9 @@ export class MortgageBrokersComponent implements OnInit {
     map((agentCode) => `/mortgage-brokers/agents/${agentCode}`)
   );
 
+  get bookURL(): string {
+    return 'https://calendly.com/ratemyagent-for-mortgage-brokers-experts/booking?month=2020-07';
+  }
+
   ngOnInit(): void {}
 }
