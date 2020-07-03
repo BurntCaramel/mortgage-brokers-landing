@@ -247,6 +247,9 @@ small {
 .overflow-scroll {
   overflow: scroll;
 }
+.overflow-auto {
+  overflow: auto;
+}
 
 /* === RESPONSIVE LAYOUT === */
 
